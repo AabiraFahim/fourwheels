@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head><title>signup</title></head>
+<body>
+<style>
+  .container {
+        display: flex;
+      }
+body{
+  background-image: url(bgsignup.jpg) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+fieldset{
+  margin-top: 180px;
+  margin-left:450px;
+  margin-right: 700px;
+  margin-bottom: 50px;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: rgb(241, 113, 8);
+  color: grey;
+}
+legend{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+input[type=email]{
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(151, 148, 148);
+  border-radius: 8px;
+  
+}
+input[type=password]{
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  background-color: rgb(148, 146, 146);
+}
+input[type=button]{
+  padding:10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 520px;
+  border-radius: 8px;
+  background-color:rgb(241, 113, 8) ;
+  
+}
+input[type=button]:hover {
+  background-color:rgb(148, 146, 146); 
+  color: white;
+}
+</style>
+<form>
+  <fieldset>
+    <legend>SIGN UP</legend>
+    <input type="email" placeholder="Enter email">
+    <br>
+    <input type="password" placeholder="Enter password"><br>
+    <input type="password" placeholder="Confirm password"><br>
+  </fieldset>
+  <input type="button" value="SUBMIT" onclick="window.location.href='welcome.html'"> 
+</form>
+</body>
+</html>
