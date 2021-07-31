@@ -59,7 +59,7 @@ input[type=password],input[type=text]{
   border-radius: 8px;
   background-color: rgb(148, 146, 146);
 }
-button{
+input[type=button]{
   padding:10px;
   font-size: 16px;
   font-weight: bold;
@@ -69,7 +69,7 @@ button{
   background-color:rgb(241, 113, 8) ;
   
 }
-button:hover {
+input[type=button]:hover {
   background-color:rgb(148, 146, 146); 
   color: white;
 }
@@ -86,9 +86,9 @@ button:hover {
     <input type="email" name="email" id="name" placeholder="Enter email" required>
     <br>
     <input type="password" name="password" id="password" placeholder="Enter password" required><br>
-  </fieldset></form>
-  <button name="signup" onclick="window.locatio.href='welcome.html'>Sign Up</button>
-
+  </fieldset>
+  <input type="button" value="SIGN UP" onclick="window.location.href='welcome.html'" > 
+                                 </form>
 
 </body>
 </html>
