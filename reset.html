@@ -1,10 +1,11 @@
+
 <!doctype html>
 <head><title>reset</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     @media only screen and (max-width: 620px) {
-    input[type=password]
+    input[type=password],input[type=email]
     {
       width: 80%;
     }
@@ -31,13 +32,12 @@ fieldset{
   color: grey;
 }
 legend{
-  text-shadow: 2px 2px black;
   font-size: 20px;
   font-weight: bold;
   color: white;
   text-transform:capitalize ;
 }
-input[type=password]{
+input[type=password],input[type=email]{
   padding: 10px;
   width: 90%;
   color: white;
@@ -65,15 +65,15 @@ input[type=button]:hover {
 </style>
 </head>
 <body>
-<form>
+<form action="" method="post">
   
   <fieldset>
     <legend>reset password</legend>
     
-    <input type="password" placeholder="Reset password"><br>
-    <input type="password" placeholder="Confirm password"><br>
+    <input type="email" placeholder=" Enter email" name="email"><br>
+    <input type="password" placeholder="Password" name="password"><br>
   </fieldset>
-  <input type="button" value="RESET" onclick="window.location.href='welcome.html'"> 
+  <input type="button" value="RESET" name="reset" onclick="window.location.href='welcome.html'"> 
 
 </form>
 </body>
