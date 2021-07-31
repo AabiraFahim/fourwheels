@@ -2,8 +2,7 @@
 <html>
 <head>
     <title>first document</title>
-
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container {
         display: flex;
@@ -20,8 +19,8 @@
   }
  nav {
    font-size: 12px;
-   
  }
+ 
  
   h1.a{
           margin-left: 0px;
@@ -151,18 +150,13 @@
             margin: 25px 100px ;
             text-shadow: 2px 2px 5px orange;
         }
-        h1{
-            
-          margin: 20px 350px ;
-            text-align: centre;;
-        }
         h1.a{
-          margin-left: 380px;
-          margin-top:10px ;
+          position: relative;
           margin-bottom: 0px;
           text-decoration: underline;
           font-size: 26px;
           font-style: italic;
+          text-align: center;
 
         }
         input[type=email]
@@ -188,7 +182,7 @@
   width: 70%;
 }
 
-        input[type=button]
+        input[type=submit]
            {padding: 8px;
   box-sizing: border-box;
   background-color: rgb(190, 190, 190);
@@ -207,6 +201,7 @@
     border-radius: 50px;
     margin-right: 4px;
   }
+  
         </style>
 </head>    
 <body>
@@ -225,24 +220,24 @@
     <nav ul class="a">
 <li><img src="invoice icon.png" > invoice </li>
 <li><img src="inventory icon.png">   inventory</li>
-<li><img src="report icon.png">    reports</li>
-<li><img src="notification icon.png">  notification</li>
+<li><img src="report icon.png">   sales report</li>
+<li><img src="notification icon.png"> annual report </li>
     </nav ul>
 <article>
-    
+
 <h1  class="a">LOG IN </h1>
 
 
-<form class="a"> 
-  <input  type="email" id="demo" placeholder="Enter email">
+<form class="a" method="post" action="logina.php" > 
+  <input  type="email" id="demo" placeholder="Enter email" name="email" required>
   <br>
-  <input type="password" id="demo"  placeholder="Enter password">
+  <input type="password" id="demo1"  placeholder="Enter password" name="password" required>
   <br>
-  <input type="button" id="demo" value="LOG IN" onclick="window.location.href='welcome.html'"> 
+  <input type="submit" id="demo2" value="LOG IN" name="login" onclick="window.location.href='welcome.html'" > 
 </form>
 
 <p class="b" id="demo"><a href="reset.html"> forgot password?</a></p>
-<p class="c" id="demo">donot have an account?? <a href=signup.html>sign up</a></p>
+<p class="c" id="demo">donot have an account?? <a href=signup1.php>sign up</a></p>
 </article>
 </body>    
 </html>
