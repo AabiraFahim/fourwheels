@@ -2,7 +2,26 @@
 <html>
     <head>
         <title>inventory display</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+             @media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  h3.text{
+         position: relative;
+         font-size: 30px;
+         margin-left: 0px;
+     }
+     div.a{
+         position: relative;
+         margin-left: 0px;     }
+         .back{
+             margin-left: 0px;
+         }
+
+}
+.container{
+    display: flex;
+}
             header {
           background-color:rgb(161, 161, 161);
           padding: 10px 30px;
@@ -15,25 +34,18 @@
           padding: 20px;
           width:auto;
           background-color: rgb(241, 113, 8);
-          height:10px ; 
+          height:auto; 
         }
         .text{
-            padding-left: 30%;
-            padding-top: 0%;
-            text-align: justify;
+            position: relative;
+            text-align: center;
             text-shadow:2px 2px honeydew;
-         
         
         }
         div{
-            float: left;
         }
         div.a{
             padding-left: 30%;
-        }
-        div.b{
-            padding-left: 33%;
-            margin-top: 3%;
         }
        
             .image{
@@ -52,14 +64,12 @@
                 text-decoration: underline;
             }
             .back{
-            float: right;    
-        border:2px solid ;
+            float: right;  
         width: 100px;
         height: 20px;
         text-align: center;
         font-style: italic;
-        font-size: 17px;
-        margin-top: 10%;
+        font-size: 20px;
         margin-left: 70%;
         
             }
@@ -134,24 +144,24 @@
              background-color: rgb(190, 190, 190);
             border: 2px solid darkslategray;}
  
-        
+        a{color:grey;
+        font-weight: bold;}
         </style>
  
     </head>
-    <body>
-        <header>
+    <body >
+        <header class="container">
             <div >
         <img  class="image" src="logo.jpg" alt="logo">
         </div>
         <div class="a">
         <h3 class="text">INVENTORY</h3>
         </div>
-        <div class="b">
-            <p class="back"><a href="welcome.html"> Go back</a></p>
-        </div>
+        
         </header>
         <article>
-           
+                <p class="back"><a href="welcome.html"> back</a></p>
+            <br>
             <form >
                 <label class="form">Search by brand name:</label>
                 <input type="text">
@@ -205,6 +215,7 @@
                     <td> xxxxx  </td>
                     <td>xxxxx</td>
                     <td>xxxxx</td>
+                    <td>xxxxx</td>
                 </tr>
                 <tr>
                     <td>xxxxx </td>
@@ -212,16 +223,19 @@
                     <td> xxxxx  </td>
                     <td>xxxxx</td>
                     <td>xxxxx</td>
+                    <td>xxxxx</td>
                 </tr><tr>
                     <td>xxxxx </td>
                     <td colspan=3> xxxxx  </td>
                     <td> xxxxx  </td>
                     <td>xxxxx</td>
                     <td>xxxxx</td>
+                    <td>xxxxx</td>
                 </tr><tr>
                     <td>xxxxx </td>
                     <td colspan=3> xxxxx  </td>
                     <td> xxxxx  </td>
+                    <td>xxxxx</td>
                     <td>xxxxx</td>
                     <td>xxxxx</td>
                 </tr>
@@ -229,6 +243,7 @@
                     <td>xxxxx </td>
                     <td colspan=3> xxxxx  </td>
                     <td> xxxxx  </td>
+                    <td>xxxxx</td>
                     <td>xxxxx</td>
                     <td>xxxxx</td>
                 </tr>
