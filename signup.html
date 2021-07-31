@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head><title>signup</title>
@@ -5,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
       @media only screen and (max-width: 620px) {
-      input[type=password],input[type=email]
+      input[type=password],input[type=email],input[type=text]
       {
         width: 80%;
       }
@@ -47,7 +48,7 @@ input[type=email]{
   border-radius: 8px;
   
 }
-input[type=password]{
+input[type=password],input[type=text]{
   padding: 10px;
   color: white;
   text-align: center;
@@ -58,7 +59,7 @@ input[type=password]{
   border-radius: 8px;
   background-color: rgb(148, 146, 146);
 }
-input[type=button]{
+button{
   padding:10px;
   font-size: 16px;
   font-weight: bold;
@@ -68,21 +69,26 @@ input[type=button]{
   background-color:rgb(241, 113, 8) ;
   
 }
-input[type=button]:hover {
+button:hover {
   background-color:rgb(148, 146, 146); 
   color: white;
 }
-</style></head>
+</style>
+
+</head>
 <body>
-<form>
+  
+<form action="signupa.php" method="POST">
   <fieldset>
     <legend>SIGN UP</legend>
-    <input type="email" placeholder="Enter email">
+    <input type="text" name="firstname" placeholder="Enter first name" required><br>
+    <input type="text" name="lastname" placeholder="Enter lasst name" required><br>
+    <input type="email" name="email" id="name" placeholder="Enter email" required>
     <br>
-    <input type="password" placeholder="Enter password"><br>
-    <input type="password" placeholder="Confirm password"><br>
+    <input type="password" name="password" id="password" placeholder="Enter password" required><br>
   </fieldset>
-  <input type="button" value="SUBMIT" onclick="window.location.href='welcome.html'"> 
+  <button type=submit name="signup" onclick="window.locatio.href='welcome.html'>Sign Up</button>
 </form>
+
 </body>
 </html>
