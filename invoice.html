@@ -9,7 +9,7 @@
         </script>
         <style>
 
-@media only screen and (max-width: 620px)
+@media only screen and (max-width: 620px) and (orientation:landscape )
  { article{
      height:fit-content;
  }
@@ -20,13 +20,10 @@
      div.a{
          position: relative;
      }
-     div.b{
-         float: right;
-     }
      a{
          color: orange;
      }
-}
+    }
 
 
             .container {
@@ -59,10 +56,6 @@
         }
         div.a{
             padding-left: 30%;
-        }
-        div.b{
-            padding-left: 40%;
-            margin-top: 3%;
         }
             .image{
                 width: 100px;
@@ -180,9 +173,8 @@
         <div class="a">
         <h3 class="text">INVOICE</h3>
         </div>
-        <div class="b">
             <p class="back"> <a href="welcome.html">back</a></p>
-        </div>
+        
         </header>
         <article>
             
@@ -248,7 +240,7 @@
                 </tfoot>
             </table>
                 <button  class='add' >+</button>
-                <button class ="submit" name ="submit">Submit</button>
+                <button class ="submit" name ="submit" >Submit</button>
                 <button class="print" name="print">Print</button>
 
                 <script>{
