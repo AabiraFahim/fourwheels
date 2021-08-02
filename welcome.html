@@ -10,7 +10,7 @@
         * {
           box-sizing: border-box;
         }
-        @media only screen and (max-width: 620px) {
+        @media only screen and (max-width: 620px) and (orientation:landscape ) {
   /* For mobile phones: */
   header,article,nav{
     width:auto;
@@ -25,21 +25,15 @@
     padding: 0px;
     margin: 0px;
   }
-  h1.text{
-    margin-top: 0px;
-    margin-left: 0px;
-    font-size: 45px;
+  h1.text{ 
+     position: relative; 
+    font-size: 5px;
+      text-align:cent
   }
   img.image{
     margin-right: 0px;
     padding-right: 0px;
     margin-left: 0px;
-  }
-  div.text{
-    padding: 0px;
-    margin-left: 40px;
-    margin-right: 0px;
-
   }
   div.image{
     margin-left: 0px;
@@ -192,9 +186,7 @@ a:link:hover, a:visited:active {
             <div class="image">
                 <img class="image" src="logo.jpg">
               </div>
-            <div class="text">
                 <h1 class="text">FOUR WHEELS</h1>
-            </div>
           </div>
         
         
